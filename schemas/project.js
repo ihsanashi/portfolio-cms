@@ -37,6 +37,12 @@ export default {
         Rule.required().error('Project summary is required'),
     },
     {
+      title: 'Description',
+      name: 'description',
+      type: 'text',
+      description: 'Short description for SEO',
+    },
+    {
       title: 'Image',
       name: 'image',
       type: 'image',

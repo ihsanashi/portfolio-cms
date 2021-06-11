@@ -1,10 +1,14 @@
 import S from '@sanity/desk-tool/structure-builder';
-import { BiUser, BiPhoneCall, BiRocket } from 'react-icons/bi';
+import { BiHome, BiUser, BiPhoneCall, BiRocket } from 'react-icons/bi';
 
 export default () =>
   S.list()
     .title('Content')
     .items([
+      S.listItem()
+        .title('Home')
+        .child(S.editor().id('home').schemaType('home').documentId('home'))
+        .icon(BiHome),
       S.listItem()
         .title('About')
         .child(S.editor().id('about').schemaType('about').documentId('about'))
@@ -29,6 +33,6 @@ export default () =>
       // Rest of the documents
       ...S.documentTypeListItems().filter(
         (listItem) =>
-          !['about', 'contact', 'settings'].includes(listItem.getId())
+          !['home', 'about', 'contact', 'settings'].includes(listItem.getId())
       ),
     ]);

@@ -9,6 +9,7 @@ import skill from './skill';
 import settings from './settings';
 import about from './singleton/about';
 import contact from './singleton/contact';
+import home from './singleton/home';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,5 +17,13 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([project, link, skill, about, contact, settings]),
+  types: schemaTypes.concat([
+    project,
+    link,
+    skill,
+    home,
+    about,
+    contact,
+    settings,
+  ]),
 });

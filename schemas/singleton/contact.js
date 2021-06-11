@@ -1,7 +1,7 @@
 export default {
   title: 'Contact',
   name: 'contact',
-  //   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
+  __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   type: 'document',
   fields: [
     {
@@ -14,6 +14,19 @@ export default {
       name: 'description',
       type: 'text',
       description: 'Short description for SEO',
+    },
+    {
+      title: 'Resume',
+      name: 'resume',
+      type: 'file',
+      description: 'Attach a resume file here.',
+      fields: [
+        {
+          title: 'Description',
+          name: 'description',
+          type: 'string',
+        },
+      ],
     },
   ],
 };

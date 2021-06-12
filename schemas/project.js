@@ -71,7 +71,7 @@ export default {
       title: 'Body',
       name: 'body',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [{ type: 'block' }, { type: 'image' }],
       description:
         'Consider this as the blog post section, describing what the project is about, what was done, what could be improved, and so on and so forth.',
       validation: (Rule) => [
@@ -122,6 +122,13 @@ export default {
       of: [{ type: 'link' }],
       description:
         'Is this project available via a link somewhere on the internet? Include them here!',
+    },
+    {
+      title: 'Related Projects',
+      name: 'relatedProjects',
+      type: 'reference',
+      to: [{ type: 'project' }],
+      description: 'Add a list of related projects here',
     },
   ],
   preview: {

@@ -15,12 +15,10 @@ export default {
       name: 'link',
       type: 'url',
       description: 'URL address of the link, eg. https://example.com',
-      validation: (Rule) => [
-        Rule.required().error('URL link is required'),
+      validation: (Rule) =>
         Rule.uri({
           scheme: ['http', 'https', 'mailto', 'tel'],
         }),
-      ],
     },
   ],
   preview: {

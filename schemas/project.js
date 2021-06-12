@@ -100,7 +100,7 @@ export default {
       description: 'When did you start working on this project?',
       validation: (Rule) => Rule.required().error('A start date is required'),
       options: {
-        dateFormat: 'DD-MM-YYYY',
+        dateFormat: 'MMMM YYYY',
         calendarTodayLabel: 'Today',
       },
     },
@@ -111,7 +111,7 @@ export default {
       description:
         'When did this project conclude? Required if the project has been completed.',
       options: {
-        dateFormat: 'DD-MM-YYYY',
+        dateFormat: 'MMMM YYYY',
         calendarTodayLabel: 'Today',
       },
     },

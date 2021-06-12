@@ -31,5 +31,30 @@ export default {
         },
       ],
     },
+    {
+      title: 'Category',
+      name: 'category',
+      type: 'string',
+      description: 'What category does this skill fall under?',
+      options: {
+        list: [
+          { title: 'Design', value: 'design' },
+          { title: 'Development', value: 'development' },
+        ],
+        layout: 'dropdown',
+      },
+    },
+    {
+      title: 'Description',
+      name: 'description',
+      type: 'text',
+    },
   ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'category',
+      media: 'image',
+    },
+  },
 };

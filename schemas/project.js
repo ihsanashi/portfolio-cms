@@ -29,6 +29,17 @@ export default {
       },
     },
     {
+      title: 'Category',
+      name: 'category',
+      type: 'array',
+      of: [{ type: 'string' }],
+      description: 'List of categories this project falls under.',
+      validation: (Rule) => [
+        Rule.required().error('Category is required'),
+        Rule.unique(),
+      ],
+    },
+    {
       title: 'Summary',
       name: 'summary',
       type: 'text',
@@ -122,6 +133,14 @@ export default {
       of: [{ type: 'link' }],
       description:
         'Is this project available via a link somewhere on the internet? Include them here!',
+    },
+    {
+      title: 'Technologies',
+      name: 'technologies',
+      type: 'array',
+      of: [{ type: 'string' }],
+      description: 'What were the technologies used to build this project.',
+      validation: (Rule) => [Rule.unique()],
     },
     {
       title: 'Related Projects',

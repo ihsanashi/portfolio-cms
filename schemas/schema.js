@@ -5,7 +5,6 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 import project from './project';
 import link from './link';
-import skill from './skill';
 import settings from './settings';
 import about from './singleton/about';
 import contact from './singleton/contact';
@@ -17,13 +16,5 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([
-    project,
-    link,
-    skill,
-    home,
-    about,
-    contact,
-    settings,
-  ]),
+  types: schemaTypes.concat([project, link, home, about, contact, settings]),
 });

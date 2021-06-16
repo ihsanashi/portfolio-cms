@@ -19,6 +19,15 @@ export default () =>
           S.editor().id('contact').schemaType('contact').documentId('contact')
         )
         .icon(BiPhoneCall),
+      // Visual divider
+      S.divider(),
+      // Rest of the documents
+      ...S.documentTypeListItems().filter(
+        (listItem) =>
+          !['home', 'about', 'contact', 'settings'].includes(listItem.getId())
+      ),
+      // Visual divider
+      S.divider(),
       S.listItem()
         .title('Settings')
         .child(
@@ -28,11 +37,4 @@ export default () =>
             .documentId('settings')
         )
         .icon(BiRocket),
-      // Visual divider
-      S.divider(),
-      // Rest of the documents
-      ...S.documentTypeListItems().filter(
-        (listItem) =>
-          !['home', 'about', 'contact', 'settings'].includes(listItem.getId())
-      ),
     ]);

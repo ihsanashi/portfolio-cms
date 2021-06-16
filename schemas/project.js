@@ -91,13 +91,6 @@ export default {
       ],
     },
     {
-      title: 'Skills',
-      name: 'skills',
-      type: 'array',
-      of: [{ type: 'reference', to: { type: 'skill' } }],
-      description: 'What were the technologies used for this project?',
-    },
-    {
       title: 'Completed',
       name: 'completed',
       type: 'boolean',

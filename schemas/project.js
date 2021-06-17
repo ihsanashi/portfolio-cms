@@ -56,33 +56,15 @@ export default {
     {
       title: 'Image',
       name: 'image',
-      type: 'image',
+      type: 'asset',
       description: "Main image for the project's banner or thumbnail",
       validation: (Rule) => Rule.required().error('Project image is required'),
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          title: 'Caption',
-          name: 'caption',
-          type: 'string',
-          options: {
-            isHighlighted: true,
-          },
-        },
-        {
-          title: 'Attribution',
-          name: 'attribution',
-          type: 'string',
-        },
-      ],
     },
     {
       title: 'Body',
       name: 'body',
       type: 'array',
-      of: [{ type: 'block' }, { type: 'image' }],
+      of: [{ type: 'block' }, { type: 'asset' }],
       description:
         'Consider this as the blog post section, describing what the project is about, what was done, what could be improved, and so on and so forth.',
       validation: (Rule) => [

@@ -31,15 +31,8 @@ export default {
     {
       title: 'Resume',
       name: 'resume',
-      type: 'file',
+      type: 'dossier',
       description: 'Attach a resume file here.',
-      fields: [
-        {
-          title: 'Description',
-          name: 'description',
-          type: 'string',
-        },
-      ],
     },
   ],
 };

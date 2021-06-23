@@ -16,8 +16,21 @@ export default {
     {
       title: 'Employment Type',
       name: 'employmentType',
-      type: 'string',
       description: 'State whether this was a full-time or part-time gig',
+      type: 'string',
+      options: {
+        layout: 'dropdown',
+        list: [
+          { title: 'Full-time', value: 'full-time' },
+          { title: 'Part-time', value: 'part-time' },
+          { title: 'Self-employed', value: 'self-employed' },
+          { title: 'Freelance', value: 'freelance' },
+          { title: 'Contract', value: 'contract' },
+          { title: 'Internship', value: 'internship' },
+          { title: 'Apprenticeship', value: 'apprenticeship' },
+          { title: 'Seasonal', value: 'seasonal' },
+        ],
+      },
     },
     {
       title: 'Location',

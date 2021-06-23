@@ -125,6 +125,13 @@ export default {
       validation: (Rule) => [Rule.unique()],
     },
     {
+      title: 'Highlight',
+      name: 'highlight',
+      type: 'boolean',
+      description: 'Toggle whether to highlight this project',
+      validation: (Rule) => Rule.required().error('Required'),
+    },
+    {
       title: 'Related Projects',
       name: 'relatedProjects',
       type: 'reference',

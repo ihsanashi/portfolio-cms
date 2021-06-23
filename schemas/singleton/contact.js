@@ -22,13 +22,6 @@ export default {
       of: [{ type: 'block' }, { type: 'image' }],
     },
     {
-      title: 'Links',
-      name: 'links',
-      type: 'array',
-      of: [{ type: 'link' }],
-      description: 'Add a list of links to socials, email etc',
-    },
-    {
       title: 'Resume',
       name: 'resume',
       type: 'dossier',

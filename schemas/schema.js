@@ -11,6 +11,8 @@ import contact from './singleton/contact';
 import home from './singleton/home';
 import asset from './asset';
 import dossier from './dossier';
+import workExperience from './workExperience';
+import skill from './skill';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -27,5 +29,7 @@ export default createSchema({
     settings,
     asset,
     dossier,
+    workExperience,
+    skill,
   ]),
 });

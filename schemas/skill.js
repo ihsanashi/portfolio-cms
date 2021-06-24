@@ -17,4 +17,10 @@ export default {
         'Remember to ensure the size of icons or images are consistent with one another.',
     },
   ],
+  preview: {
+    select: {
+      title: 'title',
+      media: 'image',
+    },
+  },
 };

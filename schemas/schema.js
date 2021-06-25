@@ -14,6 +14,7 @@ import dossier from './objects/dossier';
 import workExperience from './objects/workExperience';
 import skill from './objects/skill';
 import post from './documents/post';
+import category from './documents/category';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -33,5 +34,6 @@ export default createSchema({
     dossier,
     workExperience,
     skill,
+    category,
   ]),
 });

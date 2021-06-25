@@ -73,15 +73,9 @@ export default {
     {
       title: 'Category',
       name: 'category',
-      type: 'string',
+      type: 'reference',
       validation: (Rule) => Rule.required().error('Category is required'),
-      options: {
-        list: [
-          { title: 'Personal', value: 'Personal' },
-          { title: 'Random', value: 'Random' },
-          { title: 'Technology', value: 'Technology' },
-        ],
-      },
+      to: [{ type: 'category' }],
     },
     {
       title: 'Published at',

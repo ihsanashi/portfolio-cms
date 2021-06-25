@@ -16,12 +16,6 @@ export default {
       description: 'Short description for SEO',
     },
     {
-      title: 'Body',
-      name: 'body',
-      type: 'array',
-      of: [{ type: 'block' }, { type: 'image' }],
-    },
-    {
       title: 'Resume',
       name: 'resume',
       type: 'dossier',
